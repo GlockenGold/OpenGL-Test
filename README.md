@@ -1,22 +1,22 @@
 # OpenGL-Test
-Step 1)
+## Step 1)
 Run the following commands in terminal.
 ```bash
-> rm -rf build/
-> cmake -S . -B build
-> cd build/
-> make
+rm -rf build/
+cmake -S . -B build
+cd build/
+make
 ```
 
 
-Step 2)
+## Step 2)
 Try running the generated binary.
 
+```bash
+./test
+```
 
-> ./test
-
-
-Step 3)
+## Step 3)
 ```c++
 if(output == "Failed to create GLFW window"){
   cry();
