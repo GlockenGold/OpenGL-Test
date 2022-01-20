@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/test.dir/src/main.cpp.o -o test  lib/glfw/src/libglfw3.a lib/glad/libglad.a -lrt -lm -ldl -lX11 -lpthread 
