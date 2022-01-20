@@ -1,10 +1,12 @@
 # OpenGL-Test
 Step 1)
 Run the following commands in terminal.
+```bash
 > rm -rf build/
 > cmake -S . -B build
 > cd build/
 > make
+```
 
 
 Step 2)
