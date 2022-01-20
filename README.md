@@ -20,8 +20,8 @@ Try running the generated binary.
 ```c++
 if(output == "Failed to create GLFW window"){
   cry();
- }
- else{
+}
+else{
   cry(); // WHYYYYY DOES IT WORK ON YOUR SYSTEM AND NOT MINE?!??!?!?
- }
+}
 ```
