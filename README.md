@@ -5,9 +5,15 @@ Run the following commands in terminal.
 > cmake -S . -B build
 > cd build/
 > make
+
+
 Step 2)
 Try running the generated binary.
+
+
 > ./test
+
+
 Step 3)
 if(output == "Failed to create GLFW window"){
   cry();
