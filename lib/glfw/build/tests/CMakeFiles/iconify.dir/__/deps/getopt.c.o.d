@@ -1,6 +1,7 @@
 tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o: \
- /home/erik/dev/glfw-3.3.6/deps/getopt.c /usr/include/stdc-predef.h \
- /home/erik/dev/glfw-3.3.6/deps/getopt.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/getopt.c \
+ /usr/include/stdc-predef.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/getopt.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \

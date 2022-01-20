@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erik/dev/glfw-3.3.6
+CMAKE_SOURCE_DIR = /home/erik/dev/Cpp-workspace/lib/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erik/dev/glfw-3.3.6/build
+CMAKE_BINARY_DIR = /home/erik/dev/Cpp-workspace/lib/glfw/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/erik/dev/glfw-3.3.6/build/CMakeFiles /home/erik/dev/glfw-3.3.6/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erik/dev/Cpp-workspace/lib/glfw/build/CMakeFiles /home/erik/dev/Cpp-workspace/lib/glfw/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/erik/dev/glfw-3.3.6/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/erik/dev/Cpp-workspace/lib/glfw/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -175,19 +175,6 @@ uninstall/fast:
 .PHONY : uninstall/fast
 
 #=============================================================================
-# Target rules for targets named glfw
-
-# Build rule for target.
-glfw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
-.PHONY : glfw
-
-# fast build rule for target.
-glfw/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/glfw.dir/build.make src/CMakeFiles/glfw.dir/build
-.PHONY : glfw/fast
-
-#=============================================================================
 # Target rules for targets named update_mappings
 
 # Build rule for target.
@@ -199,6 +186,19 @@ update_mappings: cmake_check_build_system
 update_mappings/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/update_mappings.dir/build.make src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/glfw.dir/build.make src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
 
 #=============================================================================
 # Target rules for targets named boing
@@ -253,6 +253,19 @@ sharing/fast:
 .PHONY : sharing/fast
 
 #=============================================================================
+# Target rules for targets named triangle-opengles
+
+# Build rule for target.
+triangle-opengles: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 triangle-opengles
+.PHONY : triangle-opengles
+
+# fast build rule for target.
+triangle-opengles/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/triangle-opengles.dir/build.make examples/CMakeFiles/triangle-opengles.dir/build
+.PHONY : triangle-opengles/fast
+
+#=============================================================================
 # Target rules for targets named particles
 
 # Build rule for target.
@@ -266,19 +279,6 @@ particles/fast:
 .PHONY : particles/fast
 
 #=============================================================================
-# Target rules for targets named simple
-
-# Build rule for target.
-simple: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple
-.PHONY : simple
-
-# fast build rule for target.
-simple/fast:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/simple.dir/build.make examples/CMakeFiles/simple.dir/build
-.PHONY : simple/fast
-
-#=============================================================================
 # Target rules for targets named splitview
 
 # Build rule for target.
@@ -290,6 +290,19 @@ splitview: cmake_check_build_system
 splitview/fast:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/splitview.dir/build.make examples/CMakeFiles/splitview.dir/build
 .PHONY : splitview/fast
+
+#=============================================================================
+# Target rules for targets named triangle-opengl
+
+# Build rule for target.
+triangle-opengl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 triangle-opengl
+.PHONY : triangle-opengl
+
+# fast build rule for target.
+triangle-opengl/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/triangle-opengl.dir/build.make examples/CMakeFiles/triangle-opengl.dir/build
+.PHONY : triangle-opengl/fast
 
 #=============================================================================
 # Target rules for targets named offscreen
@@ -318,6 +331,32 @@ wave/fast:
 .PHONY : wave/fast
 
 #=============================================================================
+# Target rules for targets named windows
+
+# Build rule for target.
+windows: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 windows
+.PHONY : windows
+
+# fast build rule for target.
+windows/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/windows.dir/build.make examples/CMakeFiles/windows.dir/build
+.PHONY : windows/fast
+
+#=============================================================================
+# Target rules for targets named window
+
+# Build rule for target.
+window: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 window
+.PHONY : window
+
+# fast build rule for target.
+window/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/window.dir/build.make tests/CMakeFiles/window.dir/build
+.PHONY : window/fast
+
+#=============================================================================
 # Target rules for targets named triangle-vulkan
 
 # Build rule for target.
@@ -329,19 +368,6 @@ triangle-vulkan: cmake_check_build_system
 triangle-vulkan/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/triangle-vulkan.dir/build.make tests/CMakeFiles/triangle-vulkan.dir/build
 .PHONY : triangle-vulkan/fast
-
-#=============================================================================
-# Target rules for targets named tearing
-
-# Build rule for target.
-tearing: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tearing
-.PHONY : tearing
-
-# fast build rule for target.
-tearing/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/build
-.PHONY : tearing/fast
 
 #=============================================================================
 # Target rules for targets named title
@@ -357,17 +383,30 @@ title/fast:
 .PHONY : title/fast
 
 #=============================================================================
-# Target rules for targets named opacity
+# Target rules for targets named tearing
 
 # Build rule for target.
-opacity: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opacity
-.PHONY : opacity
+tearing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tearing
+.PHONY : tearing
 
 # fast build rule for target.
-opacity/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/build
-.PHONY : opacity/fast
+tearing/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/build
+.PHONY : tearing/fast
+
+#=============================================================================
+# Target rules for targets named allocator
+
+# Build rule for target.
+allocator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 allocator
+.PHONY : allocator
+
+# fast build rule for target.
+allocator/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/allocator.dir/build.make tests/CMakeFiles/allocator.dir/build
+.PHONY : allocator/fast
 
 #=============================================================================
 # Target rules for targets named clipboard
@@ -381,6 +420,32 @@ clipboard: cmake_check_build_system
 clipboard/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/build
 .PHONY : clipboard/fast
+
+#=============================================================================
+# Target rules for targets named joysticks
+
+# Build rule for target.
+joysticks: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 joysticks
+.PHONY : joysticks
+
+# fast build rule for target.
+joysticks/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/build
+.PHONY : joysticks/fast
+
+#=============================================================================
+# Target rules for targets named events
+
+# Build rule for target.
+events: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 events
+.PHONY : events
+
+# fast build rule for target.
+events/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/build
+.PHONY : events/fast
 
 #=============================================================================
 # Target rules for targets named msaa
@@ -461,19 +526,6 @@ monitors/fast:
 .PHONY : monitors/fast
 
 #=============================================================================
-# Target rules for targets named windows
-
-# Build rule for target.
-windows: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 windows
-.PHONY : windows
-
-# fast build rule for target.
-windows/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/build
-.PHONY : windows/fast
-
-#=============================================================================
 # Target rules for targets named timeout
 
 # Build rule for target.
@@ -551,32 +603,6 @@ icon/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/build
 .PHONY : icon/fast
 
-#=============================================================================
-# Target rules for targets named events
-
-# Build rule for target.
-events: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 events
-.PHONY : events
-
-# fast build rule for target.
-events/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/build
-.PHONY : events/fast
-
-#=============================================================================
-# Target rules for targets named joysticks
-
-# Build rule for target.
-joysticks: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 joysticks
-.PHONY : joysticks
-
-# fast build rule for target.
-joysticks/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/build
-.PHONY : joysticks/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -591,6 +617,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... update_mappings"
+	@echo "... allocator"
 	@echo "... boing"
 	@echo "... clipboard"
 	@echo "... cursor"
@@ -608,18 +635,19 @@ help:
 	@echo "... monitors"
 	@echo "... msaa"
 	@echo "... offscreen"
-	@echo "... opacity"
 	@echo "... particles"
 	@echo "... reopen"
 	@echo "... sharing"
-	@echo "... simple"
 	@echo "... splitview"
 	@echo "... tearing"
 	@echo "... threads"
 	@echo "... timeout"
 	@echo "... title"
+	@echo "... triangle-opengl"
+	@echo "... triangle-opengles"
 	@echo "... triangle-vulkan"
 	@echo "... wave"
+	@echo "... window"
 	@echo "... windows"
 .PHONY : help
 

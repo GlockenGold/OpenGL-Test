@@ -8,13 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/erik/dev/glfw-3.3.6/deps/glad_gl.c" "examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o" "gcc" "examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o.d"
-  "/home/erik/dev/glfw-3.3.6/examples/gears.c" "examples/CMakeFiles/gears.dir/gears.c.o" "gcc" "examples/CMakeFiles/gears.dir/gears.c.o.d"
+  "/home/erik/dev/Cpp-workspace/lib/glfw/examples/gears.c" "examples/CMakeFiles/gears.dir/gears.c.o" "gcc" "examples/CMakeFiles/gears.dir/gears.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/erik/dev/glfw-3.3.6/build/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/home/erik/dev/Cpp-workspace/lib/glfw/build/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

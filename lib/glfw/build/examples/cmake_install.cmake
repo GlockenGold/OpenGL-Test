@@ -1,4 +1,4 @@
-# Install script for directory: /home/erik/dev/glfw-3.3.6/examples
+# Install script for directory: /home/erik/dev/Cpp-workspace/lib/glfw/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/home/erik/dev/glfw-3.3.6/build/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"/home/erik/dev/glfw-3.3.6/build/install_manifest.txt\"")
+if (NOT EXISTS "/home/erik/dev/Cpp-workspace/lib/glfw/build/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"/home/erik/dev/Cpp-workspace/lib/glfw/build/install_manifest.txt\"")
 endif()
 
-file(READ "/home/erik/dev/glfw-3.3.6/build/install_manifest.txt" files)
+file(READ "/home/erik/dev/Cpp-workspace/lib/glfw/build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

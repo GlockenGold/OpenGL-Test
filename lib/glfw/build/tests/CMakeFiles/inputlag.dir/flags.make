@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/erik/dev/glfw-3.3.6/deps -I/home/erik/dev/glfw-3.3.6/include
+C_INCLUDES = -I/home/erik/dev/Cpp-workspace/lib/glfw/deps -I/home/erik/dev/Cpp-workspace/lib/glfw/include
 
 C_FLAGS = -std=gnu99
 

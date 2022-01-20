@@ -1,8 +1,8 @@
 src/CMakeFiles/glfw.dir/context.c.o: \
- /home/erik/dev/glfw-3.3.6/src/context.c /usr/include/stdc-predef.h \
- /home/erik/dev/glfw-3.3.6/src/internal.h \
- /home/erik/dev/glfw-3.3.6/build/src/glfw_config.h \
- /home/erik/dev/glfw-3.3.6/src/../include/GLFW/glfw3.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/src/context.c \
+ /usr/include/stdc-predef.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/src/internal.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/src/../include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -18,8 +18,10 @@ src/CMakeFiles/glfw.dir/context.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/erik/dev/glfw-3.3.6/src/x11_platform.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/src/platform.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/src/null_platform.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/src/x11_platform.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
@@ -53,8 +55,7 @@ src/CMakeFiles/glfw.dir/context.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/bits/signal_ext.h /usr/include/dlfcn.h \
- /usr/include/x86_64-linux-gnu/bits/dlfcn.h /usr/include/X11/Xlib.h \
+ /usr/include/x86_64-linux-gnu/bits/signal_ext.h /usr/include/X11/Xlib.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
@@ -68,8 +69,8 @@ src/CMakeFiles/glfw.dir/context.c.o: \
  /usr/include/X11/X.h /usr/include/X11/Xfuncproto.h \
  /usr/include/X11/Xosdefs.h /usr/include/X11/keysym.h \
  /usr/include/X11/keysymdef.h /usr/include/X11/Xatom.h \
- /usr/include/X11/Xcursor/Xcursor.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+ /usr/include/X11/Xresource.h /usr/include/X11/Xcursor/Xcursor.h \
+ /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
@@ -86,22 +87,11 @@ src/CMakeFiles/glfw.dir/context.c.o: \
  /usr/include/X11/extensions/XInput2.h /usr/include/X11/extensions/XI2.h \
  /usr/include/X11/extensions/Xge.h /usr/include/X11/extensions/Xfixes.h \
  /usr/include/X11/extensions/xfixeswire.h \
- /home/erik/dev/glfw-3.3.6/src/posix_thread.h /usr/include/pthread.h \
- /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
- /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /home/erik/dev/glfw-3.3.6/src/posix_time.h \
- /home/erik/dev/glfw-3.3.6/src/xkb_unicode.h \
- /home/erik/dev/glfw-3.3.6/src/glx_context.h \
- /home/erik/dev/glfw-3.3.6/src/egl_context.h \
- /home/erik/dev/glfw-3.3.6/src/osmesa_context.h \
- /home/erik/dev/glfw-3.3.6/src/linux_joystick.h \
+ /usr/include/X11/extensions/shape.h \
+ /usr/include/X11/extensions/shapeconst.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/src/xkb_unicode.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/src/null_joystick.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/src/linux_joystick.h \
  /usr/include/linux/input.h /usr/include/x86_64-linux-gnu/sys/time.h \
  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
@@ -120,8 +110,21 @@ src/CMakeFiles/glfw.dir/context.c.o: \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
  /usr/include/linux/input-event-codes.h /usr/include/linux/limits.h \
- /usr/include/regex.h /usr/include/assert.h /usr/include/string.h \
- /usr/include/strings.h /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/include/regex.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/src/posix_thread.h \
+ /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/src/posix_time.h \
+ /usr/include/assert.h /usr/include/string.h /usr/include/strings.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \

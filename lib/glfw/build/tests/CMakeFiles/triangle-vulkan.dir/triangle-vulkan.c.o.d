@@ -1,5 +1,5 @@
 tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o: \
- /home/erik/dev/glfw-3.3.6/tests/triangle-vulkan.c \
+ /home/erik/dev/Cpp-workspace/lib/glfw/tests/triangle-vulkan.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -70,9 +70,8 @@ tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/erik/dev/glfw-3.3.6/deps/glad/vulkan.h \
- /home/erik/dev/glfw-3.3.6/deps/glad/vk_platform.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/glad/vulkan.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/erik/dev/glfw-3.3.6/include/GLFW/glfw3.h
+ /home/erik/dev/Cpp-workspace/lib/glfw/include/GLFW/glfw3.h

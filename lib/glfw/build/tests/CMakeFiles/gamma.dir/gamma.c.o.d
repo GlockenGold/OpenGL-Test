@@ -1,7 +1,7 @@
 tests/CMakeFiles/gamma.dir/gamma.c.o: \
- /home/erik/dev/glfw-3.3.6/tests/gamma.c /usr/include/stdc-predef.h \
- /home/erik/dev/glfw-3.3.6/deps/glad/gl.h \
- /home/erik/dev/glfw-3.3.6/deps/glad/khrplatform.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/tests/gamma.c \
+ /usr/include/stdc-predef.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/glad/gl.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -15,11 +15,17 @@ tests/CMakeFiles/gamma.dir/gamma.c.o: \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/erik/dev/glfw-3.3.6/include/GLFW/glfw3.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
- /home/erik/dev/glfw-3.3.6/deps/nuklear.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h /usr/include/stdlib.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
@@ -44,16 +50,11 @@ tests/CMakeFiles/gamma.dir/gamma.c.o: \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/assert.h \
- /home/erik/dev/glfw-3.3.6/deps/nuklear_glfw_gl2.h /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/sys_errlist.h /usr/include/string.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h
+ /usr/include/strings.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/include/GLFW/glfw3.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/nuklear.h \
+ /usr/include/assert.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/nuklear_glfw_gl2.h

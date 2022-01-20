@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erik/dev/glfw-3.3.6
+CMAKE_SOURCE_DIR = /home/erik/dev/Cpp-workspace/lib/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erik/dev/glfw-3.3.6/build
+CMAKE_BINARY_DIR = /home/erik/dev/Cpp-workspace/lib/glfw/build
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/gears.dir/depend.make
@@ -72,60 +72,43 @@ include examples/CMakeFiles/gears.dir/flags.make
 examples/CMakeFiles/gears.dir/gears.c.o: examples/CMakeFiles/gears.dir/flags.make
 examples/CMakeFiles/gears.dir/gears.c.o: ../examples/gears.c
 examples/CMakeFiles/gears.dir/gears.c.o: examples/CMakeFiles/gears.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erik/dev/glfw-3.3.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/gears.dir/gears.c.o"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/gears.dir/gears.c.o -MF CMakeFiles/gears.dir/gears.c.o.d -o CMakeFiles/gears.dir/gears.c.o -c /home/erik/dev/glfw-3.3.6/examples/gears.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erik/dev/Cpp-workspace/lib/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/gears.dir/gears.c.o"
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/gears.dir/gears.c.o -MF CMakeFiles/gears.dir/gears.c.o.d -o CMakeFiles/gears.dir/gears.c.o -c /home/erik/dev/Cpp-workspace/lib/glfw/examples/gears.c
 
 examples/CMakeFiles/gears.dir/gears.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gears.dir/gears.c.i"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/dev/glfw-3.3.6/examples/gears.c > CMakeFiles/gears.dir/gears.c.i
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/dev/Cpp-workspace/lib/glfw/examples/gears.c > CMakeFiles/gears.dir/gears.c.i
 
 examples/CMakeFiles/gears.dir/gears.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gears.dir/gears.c.s"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/dev/glfw-3.3.6/examples/gears.c -o CMakeFiles/gears.dir/gears.c.s
-
-examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o: examples/CMakeFiles/gears.dir/flags.make
-examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o: ../deps/glad_gl.c
-examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o: examples/CMakeFiles/gears.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erik/dev/glfw-3.3.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o -MF CMakeFiles/gears.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/gears.dir/__/deps/glad_gl.c.o -c /home/erik/dev/glfw-3.3.6/deps/glad_gl.c
-
-examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/gears.dir/__/deps/glad_gl.c.i"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/dev/glfw-3.3.6/deps/glad_gl.c > CMakeFiles/gears.dir/__/deps/glad_gl.c.i
-
-examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gears.dir/__/deps/glad_gl.c.s"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/dev/glfw-3.3.6/deps/glad_gl.c -o CMakeFiles/gears.dir/__/deps/glad_gl.c.s
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/dev/Cpp-workspace/lib/glfw/examples/gears.c -o CMakeFiles/gears.dir/gears.c.s
 
 # Object files for target gears
 gears_OBJECTS = \
-"CMakeFiles/gears.dir/gears.c.o" \
-"CMakeFiles/gears.dir/__/deps/glad_gl.c.o"
+"CMakeFiles/gears.dir/gears.c.o"
 
 # External object files for target gears
 gears_EXTERNAL_OBJECTS =
 
 examples/gears: examples/CMakeFiles/gears.dir/gears.c.o
-examples/gears: examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o
 examples/gears: examples/CMakeFiles/gears.dir/build.make
 examples/gears: src/libglfw3.a
 examples/gears: /usr/lib/x86_64-linux-gnu/libm.so
 examples/gears: /usr/lib/x86_64-linux-gnu/librt.so
 examples/gears: /usr/lib/x86_64-linux-gnu/libm.so
-examples/gears: /usr/lib/x86_64-linux-gnu/libX11.so
 examples/gears: examples/CMakeFiles/gears.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/erik/dev/glfw-3.3.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable gears"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gears.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/erik/dev/Cpp-workspace/lib/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable gears"
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gears.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/gears.dir/build: examples/gears
 .PHONY : examples/CMakeFiles/gears.dir/build
 
 examples/CMakeFiles/gears.dir/clean:
-	cd /home/erik/dev/glfw-3.3.6/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/gears.dir/cmake_clean.cmake
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/gears.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/gears.dir/clean
 
 examples/CMakeFiles/gears.dir/depend:
-	cd /home/erik/dev/glfw-3.3.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erik/dev/glfw-3.3.6 /home/erik/dev/glfw-3.3.6/examples /home/erik/dev/glfw-3.3.6/build /home/erik/dev/glfw-3.3.6/build/examples /home/erik/dev/glfw-3.3.6/build/examples/CMakeFiles/gears.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erik/dev/Cpp-workspace/lib/glfw /home/erik/dev/Cpp-workspace/lib/glfw/examples /home/erik/dev/Cpp-workspace/lib/glfw/build /home/erik/dev/Cpp-workspace/lib/glfw/build/examples /home/erik/dev/Cpp-workspace/lib/glfw/build/examples/CMakeFiles/gears.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/CMakeFiles/gears.dir/depend
 

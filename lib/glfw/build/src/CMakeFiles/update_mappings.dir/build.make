@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erik/dev/glfw-3.3.6
+CMAKE_SOURCE_DIR = /home/erik/dev/Cpp-workspace/lib/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erik/dev/glfw-3.3.6/build
+CMAKE_BINARY_DIR = /home/erik/dev/Cpp-workspace/lib/glfw/build
 
 # Utility rule file for update_mappings.
 
@@ -67,8 +67,8 @@ include src/CMakeFiles/update_mappings.dir/compiler_depend.make
 include src/CMakeFiles/update_mappings.dir/progress.make
 
 src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erik/dev/glfw-3.3.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd /home/erik/dev/glfw-3.3.6/src && /usr/local/bin/cmake -P /home/erik/dev/glfw-3.3.6/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/erik/dev/Cpp-workspace/lib/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/src && /usr/local/bin/cmake -P /home/erik/dev/Cpp-workspace/lib/glfw/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 
 update_mappings: src/CMakeFiles/update_mappings
 update_mappings: src/CMakeFiles/update_mappings.dir/build.make
@@ -79,10 +79,10 @@ src/CMakeFiles/update_mappings.dir/build: update_mappings
 .PHONY : src/CMakeFiles/update_mappings.dir/build
 
 src/CMakeFiles/update_mappings.dir/clean:
-	cd /home/erik/dev/glfw-3.3.6/build/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/update_mappings.dir/clean
 
 src/CMakeFiles/update_mappings.dir/depend:
-	cd /home/erik/dev/glfw-3.3.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erik/dev/glfw-3.3.6 /home/erik/dev/glfw-3.3.6/src /home/erik/dev/glfw-3.3.6/build /home/erik/dev/glfw-3.3.6/build/src /home/erik/dev/glfw-3.3.6/build/src/CMakeFiles/update_mappings.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erik/dev/Cpp-workspace/lib/glfw /home/erik/dev/Cpp-workspace/lib/glfw/src /home/erik/dev/Cpp-workspace/lib/glfw/build /home/erik/dev/Cpp-workspace/lib/glfw/build/src /home/erik/dev/Cpp-workspace/lib/glfw/build/src/CMakeFiles/update_mappings.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/update_mappings.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erik/dev/glfw-3.3.6
+CMAKE_SOURCE_DIR = /home/erik/dev/Cpp-workspace/lib/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erik/dev/glfw-3.3.6/build
+CMAKE_BINARY_DIR = /home/erik/dev/Cpp-workspace/lib/glfw/build
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/heightmap.dir/depend.make
@@ -72,60 +72,43 @@ include examples/CMakeFiles/heightmap.dir/flags.make
 examples/CMakeFiles/heightmap.dir/heightmap.c.o: examples/CMakeFiles/heightmap.dir/flags.make
 examples/CMakeFiles/heightmap.dir/heightmap.c.o: ../examples/heightmap.c
 examples/CMakeFiles/heightmap.dir/heightmap.c.o: examples/CMakeFiles/heightmap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erik/dev/glfw-3.3.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/heightmap.dir/heightmap.c.o"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/heightmap.dir/heightmap.c.o -MF CMakeFiles/heightmap.dir/heightmap.c.o.d -o CMakeFiles/heightmap.dir/heightmap.c.o -c /home/erik/dev/glfw-3.3.6/examples/heightmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erik/dev/Cpp-workspace/lib/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/heightmap.dir/heightmap.c.o"
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/heightmap.dir/heightmap.c.o -MF CMakeFiles/heightmap.dir/heightmap.c.o.d -o CMakeFiles/heightmap.dir/heightmap.c.o -c /home/erik/dev/Cpp-workspace/lib/glfw/examples/heightmap.c
 
 examples/CMakeFiles/heightmap.dir/heightmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/heightmap.dir/heightmap.c.i"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/dev/glfw-3.3.6/examples/heightmap.c > CMakeFiles/heightmap.dir/heightmap.c.i
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/dev/Cpp-workspace/lib/glfw/examples/heightmap.c > CMakeFiles/heightmap.dir/heightmap.c.i
 
 examples/CMakeFiles/heightmap.dir/heightmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/heightmap.dir/heightmap.c.s"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/dev/glfw-3.3.6/examples/heightmap.c -o CMakeFiles/heightmap.dir/heightmap.c.s
-
-examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o: examples/CMakeFiles/heightmap.dir/flags.make
-examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o: ../deps/glad_gl.c
-examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o: examples/CMakeFiles/heightmap.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erik/dev/glfw-3.3.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o -MF CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o.d -o CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o -c /home/erik/dev/glfw-3.3.6/deps/glad_gl.c
-
-examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/heightmap.dir/__/deps/glad_gl.c.i"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/dev/glfw-3.3.6/deps/glad_gl.c > CMakeFiles/heightmap.dir/__/deps/glad_gl.c.i
-
-examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/heightmap.dir/__/deps/glad_gl.c.s"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/dev/glfw-3.3.6/deps/glad_gl.c -o CMakeFiles/heightmap.dir/__/deps/glad_gl.c.s
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/dev/Cpp-workspace/lib/glfw/examples/heightmap.c -o CMakeFiles/heightmap.dir/heightmap.c.s
 
 # Object files for target heightmap
 heightmap_OBJECTS = \
-"CMakeFiles/heightmap.dir/heightmap.c.o" \
-"CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o"
+"CMakeFiles/heightmap.dir/heightmap.c.o"
 
 # External object files for target heightmap
 heightmap_EXTERNAL_OBJECTS =
 
 examples/heightmap: examples/CMakeFiles/heightmap.dir/heightmap.c.o
-examples/heightmap: examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o
 examples/heightmap: examples/CMakeFiles/heightmap.dir/build.make
 examples/heightmap: src/libglfw3.a
 examples/heightmap: /usr/lib/x86_64-linux-gnu/libm.so
 examples/heightmap: /usr/lib/x86_64-linux-gnu/librt.so
 examples/heightmap: /usr/lib/x86_64-linux-gnu/libm.so
-examples/heightmap: /usr/lib/x86_64-linux-gnu/libX11.so
 examples/heightmap: examples/CMakeFiles/heightmap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/erik/dev/glfw-3.3.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable heightmap"
-	cd /home/erik/dev/glfw-3.3.6/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/heightmap.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/erik/dev/Cpp-workspace/lib/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable heightmap"
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/heightmap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/heightmap.dir/build: examples/heightmap
 .PHONY : examples/CMakeFiles/heightmap.dir/build
 
 examples/CMakeFiles/heightmap.dir/clean:
-	cd /home/erik/dev/glfw-3.3.6/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/heightmap.dir/cmake_clean.cmake
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/heightmap.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/heightmap.dir/clean
 
 examples/CMakeFiles/heightmap.dir/depend:
-	cd /home/erik/dev/glfw-3.3.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erik/dev/glfw-3.3.6 /home/erik/dev/glfw-3.3.6/examples /home/erik/dev/glfw-3.3.6/build /home/erik/dev/glfw-3.3.6/build/examples /home/erik/dev/glfw-3.3.6/build/examples/CMakeFiles/heightmap.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erik/dev/Cpp-workspace/lib/glfw /home/erik/dev/Cpp-workspace/lib/glfw/examples /home/erik/dev/Cpp-workspace/lib/glfw/build /home/erik/dev/Cpp-workspace/lib/glfw/build/examples /home/erik/dev/Cpp-workspace/lib/glfw/build/examples/CMakeFiles/heightmap.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/CMakeFiles/heightmap.dir/depend
 

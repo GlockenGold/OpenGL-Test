@@ -1,7 +1,9 @@
 tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o: \
- /home/erik/dev/glfw-3.3.6/deps/tinycthread.c /usr/include/stdc-predef.h \
- /home/erik/dev/glfw-3.3.6/deps/tinycthread.h /usr/include/time.h \
- /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/tinycthread.c \
+ /usr/include/stdc-predef.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/tinycthread.h \
+ /usr/include/time.h /usr/include/features.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \

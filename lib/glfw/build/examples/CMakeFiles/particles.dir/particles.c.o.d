@@ -1,5 +1,5 @@
 examples/CMakeFiles/particles.dir/particles.c.o: \
- /home/erik/dev/glfw-3.3.6/examples/particles.c \
+ /home/erik/dev/Cpp-workspace/lib/glfw/examples/particles.c \
  /usr/include/stdc-predef.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -60,17 +60,16 @@ examples/CMakeFiles/particles.dir/particles.c.o: \
  /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /home/erik/dev/glfw-3.3.6/deps/tinycthread.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/tinycthread.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /home/erik/dev/glfw-3.3.6/deps/getopt.h \
- /home/erik/dev/glfw-3.3.6/deps/linmath.h \
- /home/erik/dev/glfw-3.3.6/deps/glad/gl.h \
- /home/erik/dev/glfw-3.3.6/deps/glad/khrplatform.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/getopt.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/linmath.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/glad/gl.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/erik/dev/glfw-3.3.6/include/GLFW/glfw3.h
+ /home/erik/dev/Cpp-workspace/lib/glfw/include/GLFW/glfw3.h

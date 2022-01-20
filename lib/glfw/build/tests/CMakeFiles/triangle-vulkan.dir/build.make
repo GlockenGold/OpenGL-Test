@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/erik/dev/glfw-3.3.6
+CMAKE_SOURCE_DIR = /home/erik/dev/Cpp-workspace/lib/glfw
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/erik/dev/glfw-3.3.6/build
+CMAKE_BINARY_DIR = /home/erik/dev/Cpp-workspace/lib/glfw/build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/triangle-vulkan.dir/depend.make
@@ -72,60 +72,43 @@ include tests/CMakeFiles/triangle-vulkan.dir/flags.make
 tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o: tests/CMakeFiles/triangle-vulkan.dir/flags.make
 tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o: ../tests/triangle-vulkan.c
 tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o: tests/CMakeFiles/triangle-vulkan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erik/dev/glfw-3.3.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o"
-	cd /home/erik/dev/glfw-3.3.6/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o -MF CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o.d -o CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o -c /home/erik/dev/glfw-3.3.6/tests/triangle-vulkan.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erik/dev/Cpp-workspace/lib/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o"
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o -MF CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o.d -o CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o -c /home/erik/dev/Cpp-workspace/lib/glfw/tests/triangle-vulkan.c
 
 tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.i"
-	cd /home/erik/dev/glfw-3.3.6/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/dev/glfw-3.3.6/tests/triangle-vulkan.c > CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.i
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/dev/Cpp-workspace/lib/glfw/tests/triangle-vulkan.c > CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.i
 
 tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.s"
-	cd /home/erik/dev/glfw-3.3.6/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/dev/glfw-3.3.6/tests/triangle-vulkan.c -o CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.s
-
-tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o: tests/CMakeFiles/triangle-vulkan.dir/flags.make
-tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o: ../deps/glad_vulkan.c
-tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o: tests/CMakeFiles/triangle-vulkan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/erik/dev/glfw-3.3.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o"
-	cd /home/erik/dev/glfw-3.3.6/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o -MF CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o.d -o CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o -c /home/erik/dev/glfw-3.3.6/deps/glad_vulkan.c
-
-tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.i"
-	cd /home/erik/dev/glfw-3.3.6/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/erik/dev/glfw-3.3.6/deps/glad_vulkan.c > CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.i
-
-tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.s"
-	cd /home/erik/dev/glfw-3.3.6/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/dev/glfw-3.3.6/deps/glad_vulkan.c -o CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.s
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/tests && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/erik/dev/Cpp-workspace/lib/glfw/tests/triangle-vulkan.c -o CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.s
 
 # Object files for target triangle-vulkan
 triangle__vulkan_OBJECTS = \
-"CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o" \
-"CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o"
+"CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o"
 
 # External object files for target triangle-vulkan
 triangle__vulkan_EXTERNAL_OBJECTS =
 
 tests/triangle-vulkan: tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o
-tests/triangle-vulkan: tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o
 tests/triangle-vulkan: tests/CMakeFiles/triangle-vulkan.dir/build.make
 tests/triangle-vulkan: src/libglfw3.a
 tests/triangle-vulkan: /usr/lib/x86_64-linux-gnu/libm.so
 tests/triangle-vulkan: /usr/lib/x86_64-linux-gnu/librt.so
 tests/triangle-vulkan: /usr/lib/x86_64-linux-gnu/libm.so
-tests/triangle-vulkan: /usr/lib/x86_64-linux-gnu/libX11.so
 tests/triangle-vulkan: tests/CMakeFiles/triangle-vulkan.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/erik/dev/glfw-3.3.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable triangle-vulkan"
-	cd /home/erik/dev/glfw-3.3.6/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/triangle-vulkan.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/erik/dev/Cpp-workspace/lib/glfw/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable triangle-vulkan"
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/triangle-vulkan.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/triangle-vulkan.dir/build: tests/triangle-vulkan
 .PHONY : tests/CMakeFiles/triangle-vulkan.dir/build
 
 tests/CMakeFiles/triangle-vulkan.dir/clean:
-	cd /home/erik/dev/glfw-3.3.6/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/triangle-vulkan.dir/cmake_clean.cmake
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/triangle-vulkan.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/triangle-vulkan.dir/clean
 
 tests/CMakeFiles/triangle-vulkan.dir/depend:
-	cd /home/erik/dev/glfw-3.3.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erik/dev/glfw-3.3.6 /home/erik/dev/glfw-3.3.6/tests /home/erik/dev/glfw-3.3.6/build /home/erik/dev/glfw-3.3.6/build/tests /home/erik/dev/glfw-3.3.6/build/tests/CMakeFiles/triangle-vulkan.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/erik/dev/Cpp-workspace/lib/glfw/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/erik/dev/Cpp-workspace/lib/glfw /home/erik/dev/Cpp-workspace/lib/glfw/tests /home/erik/dev/Cpp-workspace/lib/glfw/build /home/erik/dev/Cpp-workspace/lib/glfw/build/tests /home/erik/dev/Cpp-workspace/lib/glfw/build/tests/CMakeFiles/triangle-vulkan.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/triangle-vulkan.dir/depend
 

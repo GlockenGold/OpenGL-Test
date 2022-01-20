@@ -1,7 +1,7 @@
 tests/CMakeFiles/events.dir/events.c.o: \
- /home/erik/dev/glfw-3.3.6/tests/events.c /usr/include/stdc-predef.h \
- /home/erik/dev/glfw-3.3.6/deps/glad/gl.h \
- /home/erik/dev/glfw-3.3.6/deps/glad/khrplatform.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/tests/events.c \
+ /usr/include/stdc-predef.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/glad/gl.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -15,9 +15,8 @@ tests/CMakeFiles/events.dir/events.c.o: \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/erik/dev/glfw-3.3.6/include/GLFW/glfw3.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h /usr/include/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -51,9 +50,11 @@ tests/CMakeFiles/events.dir/events.c.o: \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/ctype.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/string.h /usr/include/strings.h /usr/include/locale.h \
+ /usr/include/strings.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/include/GLFW/glfw3.h \
+ /usr/include/ctype.h /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h \
- /home/erik/dev/glfw-3.3.6/deps/getopt.h
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/getopt.h

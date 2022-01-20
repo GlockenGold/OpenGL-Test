@@ -1,6 +1,6 @@
 examples/CMakeFiles/wave.dir/wave.c.o: \
- /home/erik/dev/glfw-3.3.6/examples/wave.c /usr/include/stdc-predef.h \
- /usr/include/stdio.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/examples/wave.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -54,10 +54,12 @@ examples/CMakeFiles/wave.dir/wave.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/erik/dev/glfw-3.3.6/deps/glad/gl.h \
- /home/erik/dev/glfw-3.3.6/deps/glad/khrplatform.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/glad/gl.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/erik/dev/glfw-3.3.6/include/GLFW/glfw3.h \
- /home/erik/dev/glfw-3.3.6/deps/linmath.h
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/string.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/strings.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/include/GLFW/glfw3.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/linmath.h

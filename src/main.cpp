@@ -8,9 +8,11 @@ void processInput(GLFWwindow *window);
 
 int main()
 {
-    glfwInit();
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 4);
+    if(!glfwInit()){
+        exit(EXIT_FAILURE);
+    }
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     //glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
@@ -19,14 +21,14 @@ int main()
     {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
-        return -1;
+        exit(EXIT_FAILURE);
     }
     glfwMakeContextCurrent(window);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
         std::cout << "Failed to initialize GLAD" << std::endl;
-        return -1;
+        exit(EXIT_FAILURE);
     }
 
     glViewport(0, 0, 800, 600);
@@ -45,7 +47,7 @@ int main()
     }
 
     glfwTerminate();
-    return 0;
+    exit(EXIT_SUCCESS);
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height){

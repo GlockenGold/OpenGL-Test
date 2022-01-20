@@ -1,6 +1,6 @@
 examples/CMakeFiles/gears.dir/gears.c.o: \
- /home/erik/dev/glfw-3.3.6/examples/gears.c /usr/include/stdc-predef.h \
- /usr/include/math.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/examples/gears.c \
+ /usr/include/stdc-predef.h /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -56,9 +56,9 @@ examples/CMakeFiles/gears.dir/gears.c.o: \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h /home/erik/dev/glfw-3.3.6/deps/glad/gl.h \
- /home/erik/dev/glfw-3.3.6/deps/glad/khrplatform.h \
+ /usr/include/strings.h \
+ /home/erik/dev/Cpp-workspace/lib/glfw/deps/glad/gl.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/erik/dev/glfw-3.3.6/include/GLFW/glfw3.h
+ /home/erik/dev/Cpp-workspace/lib/glfw/include/GLFW/glfw3.h
