@@ -15,9 +15,11 @@ Try running the generated binary.
 
 
 Step 3)
+```c++
 if(output == "Failed to create GLFW window"){
   cry();
  }
  else{
   cry(); // WHYYYYY DOES IT WORK ON YOUR SYSTEM AND NOT MINE?!??!?!?
  }
+```
