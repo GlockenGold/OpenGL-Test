@@ -1,6 +1,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <math.h>
 
 const char *vertexShaderSource = "#version 330 core\n"
     "layout (location = 0) in vec3 aPos;\n"
@@ -15,6 +16,14 @@ const char *fragmentShaderSource = "#version 330 core\n"
     "{\n"
     "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
     "}\n\0";
+
+const char *fragmentUniformShaderSource = "#version 330 core\n"
+"out vec4 FragColor;\n"
+"uniform vec4 ourColor; // We set this variable in the OpenGL code.\n"
+"void main()\n"
+"{\n"
+"    FragColor = ourColor;\n"
+"}\n\0";
 
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
@@ -77,9 +86,21 @@ int main()
         std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
     }
 
+    unsigned int fragmentShaderUniform = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(fragmentShaderUniform, 1, &fragmentUniformShaderSource, NULL);
+    glCompileShader(fragmentShaderUniform);
+
+    glGetShaderiv(fragmentShaderUniform, GL_COMPILE_STATUS, &success);
+    if(!success)
+    {
+        glGetShaderInfoLog(fragmentShaderUniform, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
+    }
+
     unsigned int shaderProgram = glCreateProgram();
     glAttachShader(shaderProgram, vertexShader);
-    glAttachShader(shaderProgram, fragmentShader);
+    // glAttachShader(shaderProgram, fragmentShader);
+    glAttachShader(shaderProgram, fragmentShaderUniform);
     glLinkProgram(shaderProgram);
 
     glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
@@ -148,9 +169,14 @@ int main()
         // Render
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
+
+        float timeValue = glfwGetTime();
+        float greenValue = (sin(timeValue)/2.0f) + 0.5f;
+        int vertexColorLocation =glGetUniformLocation(shaderProgram, "ourColor");
     
         // Draw our first triangle
         glUseProgram(shaderProgram);
+        glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);
         glBindVertexArray(VAOs[0]);
         //glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0); // Draw square using indices.
         glDrawArrays(GL_TRIANGLES, 4, 3);  // Since we have four vertices saved for the square, start at index 4.
