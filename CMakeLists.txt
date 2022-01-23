@@ -4,7 +4,9 @@ project(test
         DESCRIPTION "A C++ project for learning OpenGL"
         LANGUAGES CXX)
 
-add_executable(test src/main.cpp)
+set(SOURCES src/main.cpp include/shader.h)
+add_executable(test ${SOURCES})
+target_include_directories(test PRIVATE include)
 target_compile_features(test PRIVATE cxx_std_20)
 
 if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
