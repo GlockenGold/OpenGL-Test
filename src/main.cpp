@@ -65,7 +65,7 @@ int main()
 
     // Shader shaderOrange("simple.vert","orange.frag");
     // Shader shaderUniform("simple.vert", "fragWithUniforms.frag");
-    Shader shaderAttrib("3.3.vertShader.vert", "3.3.fragShader.frag");
+    Shader shaderAttrib("/home/glockengold/dev/OpenGL-Test/include/3.3.vertShader.vert", "/home/glockengold/dev/OpenGL-Test/include/3.3.fragShader.frag");
 
     /*
     float vertices[] = {
@@ -90,14 +90,13 @@ int main()
          0.45f, 0.5f, 0.0f   // top
     };
     */
-
     float vertices[] = {
-        // Positions         // Colors
-        0.5f, -0.5f, 0.0f,    1.0f, 0.0f, 0.0f  // Bottom right
-        -0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f, // Bottom left
-        0.0f, 0.5f, 0.0f,     0.0f, 0.0f, 1.0f  // Top
-    };
-
+        // positions         // colors
+         0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,   // bottom right
+        -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   // bottom left
+         0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f    // top 
+    };  
+    
     unsigned int VBO, VAO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
