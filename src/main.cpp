@@ -6,28 +6,6 @@
 #include <shader.h>
 #include "stb_image.h"
 
-const char *vertexShaderSource = "#version 330 core\n"
-    "layout (location = 0) in vec3 aPos;\n"
-    "void main()\n"
-    "{\n"
-    "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-    "}\0";
-
-const char *fragmentShaderSource = "#version 330 core\n"
-    "out vec4 FragColor;\n"
-    "void main()\n"
-    "{\n"
-    "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
-    "}\n\0";
-
-const char *fragmentUniformShaderSource = "#version 330 core\n"
-"out vec4 FragColor;\n"
-"uniform vec4 ourColor; // We set this variable in the OpenGL code.\n"
-"void main()\n"
-"{\n"
-"    FragColor = ourColor;\n"
-"}\n\0";
-
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
@@ -68,35 +46,6 @@ int main()
     // Shader shaderUniform("simple.vert", "fragWithUniforms.frag");
     Shader shaderAttrib("/home/glockengold/dev/OpenGL-Test/res/shaders/4.1.vertShader.vs", "/home/glockengold/dev/OpenGL-Test/res/shaders/4.1.fragShader.fs");
 
-    /*
-    float vertices[] = {
-        0.5f, 0.5f, 0.0f, // top right
-        0.5f, -0.5f, 0.0f,  // bottom right
-        -0.5f, -0.5f, 0.0f,   // bottom left
-        -0.5f, 0.5f, 0.0f,   // top left
-        // first triangle
-        -0.9f, -0.5f, 0.0f,  // left
-        -0.0f, -0.5f, 0.0f,  // right
-        -0.45f, 0.5f, 0.0f,  // top
-    };
-    unsigned int indices[] = {
-        0, 1, 3, // First triangle
-        1, 2, 3  // Second triangle
-    };
-
-    float secondTriangle[] = {
-        // second triangle
-         0.0f, -0.5f, 0.0f,  // left
-         0.9f, -0.5f, 0.0f,  // right
-         0.45f, 0.5f, 0.0f   // top
-    };
-
-    float vertices[] = {
-        // positions         // colors
-         0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,   // bottom right
-        -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   // bottom left
-         0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f    // top 
-    };*/
     float vertices[] = {
         // positions          // colors           // texture coords
          0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f, // top right
@@ -163,38 +112,6 @@ int main()
     }
     stbi_image_free(data);
 
-    /*
-    // position attribute
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
-    // color attribute
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
-    */
-
-    /*
-    unsigned int VBOs[2], VAOs[2], EBO;
-    glGenVertexArrays(2, VAOs);
-    glGenBuffers(2, VBOs);
-    glGenBuffers(1, &EBO);
-    // Bind the Vertex Array Object first, then bind and set vertex buffer(s), then configure vertex attributes(s).    
-    // First triangle and square setup
-    glBindVertexArray(VAOs[0]);
-    glBindBuffer(GL_ARRAY_BUFFER, VBOs[0]);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3*sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
-
-    // Second triangle setup.
-    glBindVertexArray(VAOs[1]);
-    glBindBuffer(GL_ARRAY_BUFFER, VBOs[1]);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(secondTriangle), secondTriangle, GL_STATIC_DRAW);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3*sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
-    */
-
     // glBindVertexArray(0);
     // Unbind the VAO so other VAO calls won't accidentally modify this VAO, but this rarely happens. Modifying other VAOs 
     // requires a call to glBindVertexArray anyways, so we don't generally unbind VAOs (nor VBOs) when it's not directly necessary.
@@ -216,20 +133,6 @@ int main()
         glBindTexture(GL_TEXTURE_2D, texture);
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-        // glDrawArrays(GL_TRIANGLES, 0, 3);
-
-        // Update the uniform colour.
-        // shaderAttrib.setFloat("xOffset", 0.5f);
-
-       /*
-        // Draw the first triangle.
-        glBindVertexArray(VAO);
-        //glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0); // Draw square using indices.
-        glDrawArrays(GL_TRIANGLES, 4, 3);  // Since we have four vertices saved for the square, start at index 4.
-        // Draw the second triangle.
-        glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES,0 ,3);
-        */
 
         // Swap buffers and poll IO events.
         glfwSwapBuffers(window);
@@ -238,7 +141,7 @@ int main()
 
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
-    // glDeleteBuffers(1, &EBO);
+    glDeleteBuffers(1, &EBO);
 
     glfwTerminate();
     exit(EXIT_SUCCESS);
