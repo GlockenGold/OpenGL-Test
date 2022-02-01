@@ -1,15 +1,18 @@
 #include <glad/glad.h>
-#include <GLFW/glfw.h>
+#include <GLFW/glfw3.h>
 #include <iostream>
 #include <math.h>
 
 #include <shader.h>
 #include "stb_image.h"
 
+const unsigned int SCR_WIDTH = 800;
+const unsigned int SCR_HEIGHT = 600;
+
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
 
-void main(){
+int main(){
     if(!glfwInit()){
         exit(EXIT_FAILURE);
     }
@@ -37,11 +40,17 @@ void main(){
         exit(EXIT_FAILURE);
     }
 
+    Shader shaderAttrib("/home/glockengold/dev/OpenGL-Test/res/shaders/4.1.vertShader.vs", "/home/glockengold/dev/OpenGL-Test/res/shaders/4.1.fragShader.fs");
+
     float vertices[] = {
         // first triangle
         -0.9f, -0.5f, 0.0f,  // left
         -0.0f, -0.5f, 0.0f,  // right
         -0.45f, 0.5f, 0.0f,  // top
+    };
+    unsigned int indices[] = {
+        0, 1, 3,    // first triangle
+        1, 2, 3     // second triangle
     };
 
     float secondTriangle[] = {
@@ -90,15 +99,19 @@ void main(){
         // Draw the second triangle.
         glBindVertexArray(VAOs[1]);
         glDrawArrays(GL_TRIANGLES,0 ,3);
-     
+
+        // Swap buffers and poll IO events.
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+
+     }
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height){
     glViewport(0, 0, width, height);
 }
 
-void processInput(GLFWwindow *window)
-{
+void processInput(GLFWwindow *window){
     if(glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
 }
