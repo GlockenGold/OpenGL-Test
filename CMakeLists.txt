@@ -34,3 +34,7 @@ target_link_libraries(triangles glfw)
 add_subdirectory(lib/glad)
 target_link_libraries(main glad)
 target_link_libraries(triangles glad)
+
+add_subdirectory(lib/glm)
+target_link_libraries(main glm)
+target_link_libraries(triangles glm)
