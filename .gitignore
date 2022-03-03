@@ -1,6 +1,7 @@
 build/*
 lib/glad/build/*
 .vscode/*
+.cache/*
 
 # Prerequisites
 *.d

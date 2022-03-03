@@ -4,12 +4,12 @@ project(OpenGL-Test
         DESCRIPTION "A C++ project for learning OpenGL"
         LANGUAGES CXX)
 
-set(SOURCES_MAIN src/main.cpp include/shader.h src/shader.cpp include/stb_image.h src/stb_image.cpp)
+set(SOURCES_MAIN src/main.cpp include/shader.h src/shader.cpp include/stb_image.h src/stb_image.cpp include/camera.h src/camera.cpp)
 add_executable(main ${SOURCES_MAIN})
 target_include_directories(main PRIVATE include res/shaders res/textures)
 target_compile_features(main PRIVATE cxx_std_20)
 
-set(SOURCES_TRIANGLES src/two_triangles.cpp include/shader.h src/shader.cpp include/stb_image.h src/stb_image.cpp)
+set(SOURCES_TRIANGLES src/two_triangles.cpp include/shader.h src/shader.cpp include/stb_image.h src/stb_image.cpp include/camera.h src/camera.cpp)
 add_executable(triangles ${SOURCES_TRIANGLES})
 target_include_directories(triangles PRIVATE include res/shaders res/textures)
 target_compile_features(triangles PRIVATE cxx_std_20)
