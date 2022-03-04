@@ -184,6 +184,8 @@ int main()
         lighting_shader.use();
         lighting_shader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
         lighting_shader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
+        lighting_shader.setVec3("lightPos", lightPos);
+        lighting_shader.setVec3("viewPos", camera.Position);
 
         // View/projection transformations
         glm::mat4 projection {glm::perspective(glm::radians(camera.Zoom), 800.0f / 600.0f, 0.1f, 100.0f)};
@@ -194,10 +196,8 @@ int main()
         // World transformations
         glm::mat4 model {glm::mat4(1.0f)};
         lighting_shader.setMat4("model", model);
-        glm::mat3 normalMatrix = glm::inverse(glm::transpose(model));
+        glm::mat3 normalMatrix = glm::inverse(glm::transpose(view * model));
         lighting_shader.setMat3("normalMatrix", normalMatrix);
-        lighting_shader.setVec3("viewPos", camera.Position);
-        lighting_shader.setVec3("lightPos", lightPos);
 
         // Render the cube
         glBindVertexArray(cubeVAO);
