@@ -141,9 +141,6 @@ int main()
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 
-    unsigned int diffuseMap = loadTexture("../res/textures/container2.png");
-    lighting_shader.use();
-    lighting_shader.setInt("material_diffuse", 0);
     
     // Configure the light's VAO, VBO stays the same but with different strides.
     unsigned int lightVAO;
@@ -154,6 +151,12 @@ int main()
     // set the vertex attribute. Vertices now contains extra information, but we only want the vertex positions. Increase stride.
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
+
+    unsigned int diffuseMap = loadTexture("../res/textures/container2.png");
+    unsigned int specularMap = loadTexture("../res/textures/container2_specular.png");
+    lighting_shader.use();
+    lighting_shader.setInt("material_diffuse", 0);
+    lighting_shader.setInt("material_specular", 1);
 
     while (!glfwWindowShouldClose(window))
     {
@@ -202,6 +205,10 @@ int main()
         // Bind diffuse map
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, diffuseMap);
+
+        // Bind specular map
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, specularMap);
 
         // Render the cube
         glBindVertexArray(cubeVAO);
