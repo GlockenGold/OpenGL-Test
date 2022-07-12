@@ -159,9 +159,9 @@ int main()
 
     // Shader config
     lighting_shader.use();
-    lighting_shader.setInt("material_diffuse", 0);
-    lighting_shader.setInt("material_specular", 1);
-    lighting_shader.setInt("material_emission", 2);
+    lighting_shader.setInt("material.diffuse", 0);
+    lighting_shader.setInt("material.specular", 1);
+    lighting_shader.setInt("material.emission", 2);
 
     while (!glfwWindowShouldClose(window))
     {
