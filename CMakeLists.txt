@@ -4,6 +4,8 @@ project(OpenGL-Test
         DESCRIPTION "A C++ project for learning OpenGL"
         LANGUAGES CXX)
 
+find_package(OpenGL REQUIRED)
+
 set(SOURCES_MAIN src/main.cpp include/shader.h src/shader.cpp include/stb_image.h src/stb_image.cpp include/camera.h src/camera.cpp)
 add_executable(main ${SOURCES_MAIN})
 target_include_directories(main PRIVATE include res/shaders res/textures)
@@ -19,7 +21,7 @@ add_executable(lighting_playground ${SOURCES_LIGHTING})
 target_include_directories(lighting_playground PRIVATE include res/shaders res/textures)
 target_compile_features(lighting_playground PRIVATE cxx_std_20)
 
-set(SOURCES_LIGHTCASTERS src/light_casters.cpp include/shader.h src/shader.cpp include/stb_image.h src/stb_image.cpp include/camera.h src/camera.cpp)
+set(SOURCES_LIGHTCASTERS src/light_casters.cpp include/shader.h src/shader.cpp include/stb_image.h src/stb_image.cpp include/camera.h src/camera.cpp include/mesh.h include/model.h)
 add_executable(light_casters ${SOURCES_LIGHTCASTERS})
 target_include_directories(light_casters PRIVATE include res/shaders res/textures)
 target_compile_features(light_casters PRIVATE cxx_std_20)
@@ -57,3 +59,9 @@ target_link_libraries(main glm)
 target_link_libraries(triangles glm)
 target_link_libraries(lighting_playground glm)
 target_link_libraries(light_casters glm)
+
+add_subdirectory(lib/assimp)
+target_link_libraries(main assimp)
+target_link_libraries(triangles assimp)
+target_link_libraries(lighting_playground assimp)
+target_link_libraries(light_casters assimp)
