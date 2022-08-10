@@ -77,7 +77,7 @@ int main()
 
     // build and compile shaders
     // -------------------------
-    Shader ourShader("../res/shaders/1.model_loading.vs", "../res/shaders/1.model_loading.fs");
+    Shader ourShader("../res/shaders/Materials-vertShader.vs", "../res/shaders/multiLights.fs");
 
     // load models
     // -----------
@@ -113,6 +113,20 @@ int main()
         glm::mat4 view = camera.GetViewMatrix();
         ourShader.setMat4("projection", projection);
         ourShader.setMat4("view", view);
+
+        ourShader.setVec3("viewPos", camera.Position);
+        ourShader.setFloat("material.shininess", 32.0f);
+        // spotLight
+        ourShader.setVec3("spotLight.position", camera.Position);
+        ourShader.setVec3("spotLight.direction", camera.Front);
+        ourShader.setVec3("spotLight.ambient", 0.0f, 0.0f, 0.0f);
+        ourShader.setVec3("spotLight.diffuse", 1.0f, 1.0f, 1.0f);
+        ourShader.setVec3("spotLight.specular", 1.0f, 1.0f, 1.0f);
+        ourShader.setFloat("spotLight.constant", 1.0f);
+        ourShader.setFloat("spotLight.linear", 0.09f);
+        ourShader.setFloat("spotLight.quadratic", 0.032f);
+        ourShader.setFloat("spotLight.cutOff", glm::cos(glm::radians(12.5f)));
+        ourShader.setFloat("spotLight.outerCutOff", glm::cos(glm::radians(15.0f)));
 
         // render the loaded model
         glm::mat4 model = glm::mat4(1.0f);
@@ -155,6 +169,7 @@ void processInput(GLFWwindow *window)
 // ---------------------------------------------------------------------------------------------
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
+    (void)window;   // Necessary for callback to C implementation.
     // make sure the viewport matches the new window dimensions; note that width and 
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
@@ -164,6 +179,7 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 // -------------------------------------------------------
 void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
 {
+    (void)window;   // Necessary for callback to C implementation.
     float xpos = static_cast<float>(xposIn);
     float ypos = static_cast<float>(yposIn);
 
@@ -187,5 +203,7 @@ void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
 // ----------------------------------------------------------------------
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {
+    (void)window;   // Necessary for callback to C implementation.
+    (void)xoffset;
     camera.ProcessMouseScroll(static_cast<float>(yoffset));
 }
