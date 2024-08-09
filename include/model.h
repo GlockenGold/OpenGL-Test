@@ -47,8 +47,8 @@ private:
     {
         Assimp::Importer importer;
         const aiScene* scene = importer.ReadFile(path, aiProcess_Triangulate | aiProcess_GenSmoothNormals | aiProcess_FlipUVs | aiProcess_CalcTangentSpace);
-        
-        if(!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode) 
+
+        if(!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode)
         {
             std::cerr << "ERROR::ASSIMP::" << importer.GetErrorString();
             return;
@@ -58,7 +58,7 @@ private:
         processNode(scene->mRootNode, scene);
     }
 
-    // processes a node in a recursive fashion. 
+    // processes a node in a recursive fashion.
     // Processes each individual mesh located at the node and repeats this process on its children nodes (if any).
     void processNode(aiNode *node, const aiScene *scene)
     {
@@ -104,7 +104,7 @@ private:
             if(mesh->mTextureCoords[0]) // does the mesh contain texture coordinates?
             {
                 glm::vec2 vec;
-                // a vertex can contain up to 8 different texture coordinates. We thus make the assumption that we won't 
+                // a vertex can contain up to 8 different texture coordinates. We thus make the assumption that we won't
                 // use models where a vertex can have multiple texture coordinates so we always take the first set (0).
                 vec.x = mesh->mTextureCoords[0][i].x;
                 vec.y = mesh->mTextureCoords[0][i].y;
@@ -158,7 +158,7 @@ private:
         // return a mesh object created from the extracted mesh data
         return Mesh(vertices, indices, textures);
     }
-    
+
     std::vector<Texture> loadMaterialTextures(aiMaterial *mat, aiTextureType type, std::string typeName)
     {
         std::vector<Texture> textures;

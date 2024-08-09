@@ -82,7 +82,7 @@ int main()
     // load models
     // -----------
     Model ourModel("../res/objects/backpack/backpack.obj");
-    
+
     // draw in wireframe
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
@@ -170,7 +170,7 @@ void processInput(GLFWwindow *window)
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     (void)window;   // Necessary for callback to C implementation.
-    // make sure the viewport matches the new window dimensions; note that width and 
+    // make sure the viewport matches the new window dimensions; note that width and
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
 }

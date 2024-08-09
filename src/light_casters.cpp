@@ -136,7 +136,7 @@ int main()
         glm::vec3( 1.3f, -2.0f, -2.5f),
         glm::vec3( 1.5f,  2.0f, -2.5f),
         glm::vec3( 1.5f,  0.2f, -1.5f),
-        glm::vec3(-1.3f,  1.0f, -1.5f) 
+        glm::vec3(-1.3f,  1.0f, -1.5f)
     };
     // Positions of the point lights
     glm::vec3 pointLightPositions[] = {
@@ -165,7 +165,7 @@ int main()
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void *)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 
-    
+
     // Configure the light's VAO, VBO stays the same but with different strides.
     unsigned int lightVAO;
     glGenVertexArrays(1, &lightVAO);
@@ -255,7 +255,7 @@ int main()
         // View/projection properties
         glm::mat4 projection {glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f)};
         glm::mat4 view {camera.GetViewMatrix()};
-        lighting_shader.setMat4("projection", projection); 
+        lighting_shader.setMat4("projection", projection);
         lighting_shader.setMat4("view", view);
 
         // Model/normal matricies
@@ -334,7 +334,7 @@ void processInput(GLFWwindow *window)
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     (void)window;   // Necessary for callback to C implementation.
-    // make sure the viewport matches the new window dimensions; note that width and 
+    // make sure the viewport matches the new window dimensions; note that width and
     // height will be significantly larger than specified on retina displays.
     glViewport(0, 0, width, height);
 }
@@ -388,7 +388,7 @@ unsigned int loadTexture(const char * path)
             format = GL_RGB;
         else if (nrComponents == 4)
             format = GL_RGBA;
-        
+
         glBindTexture(GL_TEXTURE_2D, textureID);
         glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
